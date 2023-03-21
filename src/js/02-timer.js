@@ -35,7 +35,7 @@ const options = {
     minuteIncrement: 1,
     onClose(selectedDates) {
       if (selectedDates[0] - new Date() < 0) {
-          Notiflix.Report.warning(':rage: Warning', 'Please choose a date in the future', 'Ok', {
+          Notiflix.Report.warning('😡 Warning', 'Please choose a date in the future', 'Ok', {
             width: '360px',
             titleFontSize: '24px',
             messageFontSize: '18px',
@@ -49,7 +49,7 @@ const options = {
       
       btnEl.addEventListener('click', () => {
         btnEl.setAttribute("disabled", "disabled");
-        console.log('Нужно начать отсчет');
+
         const intervalId = setInterval(() => {
           daysEl.textContent = addLeadingZero(convertMs(selectedDates[0] - new Date()).days);
           hoursEl.textContent = addLeadingZero(convertMs(selectedDates[0] - new Date()).hours);
