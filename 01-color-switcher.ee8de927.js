@@ -1,2 +1,0 @@
-btnStartEl.addEventListener("click",(function(){document.body.style.backgroundColor=getRandomHexColor(),timeId=setInterval((function(){document.body.style.backgroundColor=getRandomHexColor()}),1e3),btnStartEl.setAttribute("disabled","disabled"),btnStopEl.removeAttribute("disabled","disabled")})),btnStopEl.addEventListener("click",(function(){clearInterval(timeId),btnStopEl.setAttribute("disabled","disabled"),btnStartEl.removeAttribute("disabled","disabled")}));
-//# sourceMappingURL=01-color-switcher.ee8de927.js.map
